@@ -1,0 +1,214 @@
+/* Responsive  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Extra small (Mobile) */
+
+@media (max-width: 479px) {
+  .wrapper {
+    max-width: 100%; /* Full width on smallest screens */
+    padding: 0 16px; /* Smaller padding for mobile */
+    margin: 0 auto;
+  }
+  .header-container {
+    padding: 20px;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .main-menu {
+    display: none; /* Hide menu by default on small screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  .main-menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .mobile-menu-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+
+  nav.main-menu ul {
+    flex-direction: column;
+  }
+
+  /* ================= Main content ================= */
+
+  .first-section {
+    grid-template-columns: 100%;
+  }
+  .first-section .about-me {
+    flex-direction: column;
+  }
+  .project-wrap,
+  .second-wrapper,
+  .third-section-cards {
+    grid-template-columns: 100%;
+  }
+  .icons-wrapper {
+    gap: 20px;
+  }
+  .number-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .number-box {
+    margin: 0 auto;
+    padding: 35px 10px 35px 10px;
+  }
+  .work-together h2 {
+    font-size: 35px;
+  }
+}
+
+/* Small (Mobile) */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 24px; /* Slightly larger padding */
+    margin: 0 auto;
+  }
+  .main-menu {
+    display: none; /* Hide menu by default on small screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  .main-menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .mobile-menu-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+  nav.main-menu ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  nav.main-menu ul li {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+  }
+  nav.main-menu ul li:hover {
+    background: #222;
+  }
+  .contact-btn {
+    display: none;
+  }
+  /* ================= Main content ================= */
+
+  .first-section {
+    grid-template-columns: 100%;
+  }
+  .first-section .about-me {
+    flex-direction: column;
+  }
+  .project-wrap,
+  .second-wrapper,
+  .third-section-cards {
+    grid-template-columns: 100%;
+  }
+  .project-wrap {
+    grid-template-columns: auto;
+  }
+  .icons-wrapper {
+    gap: 20px;
+  }
+  .number-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .number-box {
+    margin: 0 auto;
+    padding: 35px 10px 35px 10px;
+  }
+  .work-together h2 {
+    font-size: 35px;
+  }
+}
+
+/* Medium (Tablet) */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    max-width: 720px; /* Limit width for tablets */
+    padding: 0 32px; /* Balanced padding */
+  }
+  /* ================= Main content ================= */
+
+  .first-section {
+    grid-template-columns: 100%;
+  }
+  .first-section .about-me {
+    flex-direction: column;
+  }
+
+  .second-wrapper,
+  .third-section-cards {
+    grid-template-columns: 100%;
+  }
+  .project-wrap {
+    grid-template-columns: auto auto;
+  }
+  .icons-wrapper {
+    gap: 20px;
+  }
+  .number-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .number-box {
+    margin: 0 auto;
+    padding: 35px 10px 35px 10px;
+  }
+  .work-together h2 {
+    font-size: 35px;
+  }
+}
+
+/* Large(laptop) */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 48px;
+  }
+}
+
+/* Extra large (desktop) */
+
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1440px; /* Ensures it matches the largest screen size */
+    padding: 0 100px; /* Generous padding */
+  }
+}
